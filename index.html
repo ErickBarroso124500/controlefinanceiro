@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle Financeiro</h1>
+
+        <div class="balance">
+            <h2>Balanço</h2>
+            <p>Receitas: <span id="income">R$ 0,00</span></p>
+            <p>Despesas: <span id="expense">R$ 0,00</span></p>
+            <h3>Saldo: <span id="balance">R$ 0,00</span></h3>
+        </div>
+
+        <div class="transaction-form">
+            <h2>Adicionar Transação</h2>
+            <form id="transactionForm">
+                <input type="text" id="description" placeholder="Descrição" required>
+                <input type="number" id="amount" placeholder="Valor" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="transaction-list">
+            <h2>Transações</h2>
+            <ul id="transactions"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
